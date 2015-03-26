@@ -61,15 +61,12 @@
      <height>21</height>
     </rect>
    </property>
-<<<<<<< HEAD
    <property name="maximum">
     <number>999999</number>
    </property>
    <property name="displayIntegerBase">
     <number>10</number>
    </property>
-=======
->>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
   </widget>
   <widget class="QDoubleSpinBox" name="sp_horas">
    <property name="geometry">

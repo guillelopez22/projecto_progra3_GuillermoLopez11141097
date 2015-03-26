@@ -39,10 +39,7 @@ void adding_admin::on_pushButton_2_clicked()
     password= p.toStdString();
     bonus=ui->sp_bonus->value();
     employee1->push_back(new Administrador(id, nombre, usuario, password, bonus));
-<<<<<<< HEAD
     employee1->at(employee1->size()-1)->setTiempoTrabajando(0);
-=======
->>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
     ui->line_nombre->setText(QString(""));
     ui->line_password->setText(QString(""));
     ui->line_usuario->setText(QString(""));

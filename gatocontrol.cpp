@@ -1,10 +1,7 @@
 #include "gatocontrol.h"
 #include "ui_gatocontrol.h"
 #include "empleado.h"
-<<<<<<< HEAD
 #include "add_gato.h"
-=======
->>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
 #include <vector>
 
 using std::vector;
@@ -28,10 +25,7 @@ gatocontrol::~gatocontrol()
 
 void gatocontrol::on_empleaditos_currentIndexChanged(const QString &arg1)
 {
-<<<<<<< HEAD
     ui->datitos->clear();
-=======
->>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
     Empleado* temp;
     for(int i=0; i<gat->size(); i++){
         if(gat->at(i)->getUser() == ui->empleaditos->currentText().toStdString())
@@ -39,7 +33,6 @@ void gatocontrol::on_empleaditos_currentIndexChanged(const QString &arg1)
     }
     ui->datitos->appendPlainText(QString::fromStdString(temp->toString()));
 }
-<<<<<<< HEAD
 
 void gatocontrol::on_pushButton_2_clicked()
 {
@@ -49,5 +42,3 @@ void gatocontrol::on_pushButton_2_clicked()
 }
 
 
-=======
->>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
