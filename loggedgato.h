@@ -18,6 +18,9 @@ public:
     explicit loggedgato(QWidget *parent = 0, vector<Empleado*>* = 0, Empleado* = 0);
     ~loggedgato();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::loggedgato *ui;
     vector<Empleado*>* employee4;

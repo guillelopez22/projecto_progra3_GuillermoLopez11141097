@@ -8,16 +8,16 @@ class Empleado{
     unsigned int id;
     string nombre, username, password;
 
-protected:
-    unsigned int tiempo_trabajando;
 
 public:
+    unsigned int tiempo_trabajando;
     Empleado(unsigned int, string, string, string);
 
     void setNombre(string);
     void setUser(string);
     void setPassword(string);
     void setID(unsigned int);
+    void setHoras(unsigned int);
     virtual double getPrestaciones();
     virtual double getSueldo()const=0;
     virtual string toString()const;

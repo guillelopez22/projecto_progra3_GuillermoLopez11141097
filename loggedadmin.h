@@ -15,12 +15,15 @@ class loggedadmin : public QDialog
     Q_OBJECT
 
 public:
-    explicit loggedadmin(QWidget *parent = 0, vector<Empleado*>* = 0);
+    explicit loggedadmin(QWidget *parent = 0, Empleado* = 0);
     ~loggedadmin();
+
+private slots:
+    void on_pushButton_4_clicked();
 
 private:
     Ui::loggedadmin *ui;
-    vector<Empleado*>* employee3;
+    Empleado* ee;
 };
 
 #endif // LOGGEDADMIN_H

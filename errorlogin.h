@@ -15,6 +15,9 @@ public:
     explicit errorlogin(QWidget *parent = 0);
     ~errorlogin();
 
+private slots:
+    void on_buttonBox_accepted();
+
 private:
     Ui::errorlogin *ui;
 };

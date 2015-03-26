@@ -58,3 +58,6 @@ string Empleado::getUser()const{
 string Empleado::getPass()const{
     return password;
 }
+void Empleado::setHoras(unsigned int tiempo_trabajando){
+    this->tiempo_trabajando = tiempo_trabajando;
+}

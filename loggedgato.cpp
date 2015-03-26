@@ -1,5 +1,6 @@
 #include "loggedgato.h"
 #include "ui_loggedgato.h"
+#include "miestado.h"
 
 loggedgato::loggedgato(QWidget *parent, vector<Empleado*>* empleado4, Empleado* emp) :
     QDialog(parent),
@@ -15,4 +16,11 @@ loggedgato::loggedgato(QWidget *parent, vector<Empleado*>* empleado4, Empleado* 
 loggedgato::~loggedgato()
 {
     delete ui;
+}
+
+void loggedgato::on_pushButton_clicked()
+{
+    miestado diag(this, Emp);
+    diag.setModal(true);
+    diag.exec();
 }

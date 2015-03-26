@@ -20,8 +20,9 @@ Administrador::Administrador(const Administrador& admin):Empleado(admin), bonus_
 string Administrador::toString() const{
     stringstream ss;
     ss << Empleado::toString() << endl <<
-          "Salario: " << getSueldo() << endl
-          << "Gatos: " << endl;
+          "Pago extra: " << bonus_payment << endl <<
+          "Tiempo Trabajando: " << tiempo_trabajando << " Horas" << endl <<
+          "Salario: " << getSueldo() << endl;
 
     return ss.str();
 }

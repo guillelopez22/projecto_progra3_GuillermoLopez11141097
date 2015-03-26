@@ -27,7 +27,8 @@ SOURCES += main.cpp\
     errorlogin.cpp \
     loggedadmin.cpp \
     loggedgato.cpp \
-    successlogin.cpp
+    successlogin.cpp \
+    miestado.cpp
 
 HEADERS  += mainwindow.h \
     cuerdas.h \
@@ -43,7 +44,8 @@ HEADERS  += mainwindow.h \
     errorlogin.h \
     loggedadmin.h \
     loggedgato.h \
-    successlogin.h
+    successlogin.h \
+    miestado.h
 
 FORMS    += mainwindow.ui \
     error.ui \
@@ -52,4 +54,5 @@ FORMS    += mainwindow.ui \
     errorlogin.ui \
     loggedadmin.ui \
     loggedgato.ui \
-    successlogin.ui
+    successlogin.ui \
+    miestado.ui

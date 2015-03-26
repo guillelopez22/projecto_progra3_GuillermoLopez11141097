@@ -15,9 +15,12 @@ int main(int argc, char *argv[])
 
     vector<Empleado*> gatitos;
     list_emp->push_back(new Gato(222111,"Pedro", "pica", "123", 30.0));
+    list_emp->at(0)->setHoras(30);
     gatitos.push_back(new Gato(222112,"Santa", "nieve", "123", 30.0));
     gatitos.push_back(new Gato(222113,"Sergio", "serg", "123", 30.0));
-    list_emp->push_back(new Administrador(000000,"Carlos", "cp3", "123", 500.0));
+    list_emp->push_back(new Administrador(110001,"Carlos", "cp3", "123", 500.0));
+    list_emp->at(1)->setHoras(99);
+
 
     QApplication a(argc, argv);
 

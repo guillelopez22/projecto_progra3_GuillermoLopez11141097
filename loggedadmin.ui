@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>514</width>
-    <height>274</height>
+    <width>364</width>
+    <height>156</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,48 +16,35 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>150</y>
-     <width>191</width>
+     <x>20</x>
+     <y>60</y>
+     <width>181</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
-    <string>creacion de gatos</string>
+    <string>Control de Empleados</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>190</y>
-     <width>191</width>
+     <x>20</x>
+     <y>90</y>
+     <width>181</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
-    <string>creacion de instrumentos</string>
+    <string>Control de Instrumentos</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>230</y>
-     <width>191</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Ver Estado de Empleados</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_4">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>230</y>
-     <width>191</width>
+     <x>20</x>
+     <y>120</y>
+     <width>181</width>
      <height>27</height>
     </rect>
    </property>
@@ -65,30 +52,43 @@
     <string>Venta de Instrumentos</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>150</y>
-     <width>191</width>
-     <height>27</height>
+     <x>20</x>
+     <y>20</y>
+     <width>171</width>
+     <height>17</height>
     </rect>
    </property>
    <property name="text">
-    <string>Inventario de Instrumentos</string>
+    <string>Administrador en Turno:</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
+  <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>190</y>
-     <width>191</width>
+     <y>90</y>
+     <width>99</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
-    <string>Despedir Gatos</string>
+    <string>Mi estado...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="admin">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>20</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
    </property>
   </widget>
  </widget>
