@@ -75,7 +75,7 @@ void MainWindow::on_pushButton_clicked()
             successlogin asda(this, asd);
             asda.setModal(true);
             asda.exec();
-            loggedadmin diag(this, asd);
+            loggedadmin diag(this, asd, employee);
             diag.setModal(true);
             diag.exec();
             eval=1;
