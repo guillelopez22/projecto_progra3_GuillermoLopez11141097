@@ -29,9 +29,13 @@ SOURCES += main.cpp\
     loggedgato.cpp \
     successlogin.cpp \
     miestado.cpp \
+<<<<<<< HEAD
     gatocontrol.cpp \
     add_instrumento.cpp \
     list_gatos.cpp
+=======
+    gatocontrol.cpp
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
 
 HEADERS  += mainwindow.h \
     cuerdas.h \
@@ -49,9 +53,13 @@ HEADERS  += mainwindow.h \
     loggedgato.h \
     successlogin.h \
     miestado.h \
+<<<<<<< HEAD
     gatocontrol.h \
     add_instrumento.h \
     list_gatos.h
+=======
+    gatocontrol.h
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
 
 FORMS    += mainwindow.ui \
     error.ui \
@@ -62,6 +70,10 @@ FORMS    += mainwindow.ui \
     loggedgato.ui \
     successlogin.ui \
     miestado.ui \
+<<<<<<< HEAD
     gatocontrol.ui \
     add_instrumento.ui \
     list_gatos.ui
+=======
+    gatocontrol.ui
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c

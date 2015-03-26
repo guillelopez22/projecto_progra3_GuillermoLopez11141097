@@ -45,12 +45,20 @@
      <rect>
       <x>60</x>
       <y>20</y>
+<<<<<<< HEAD
       <width>171</width>
+=======
+      <width>121</width>
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
       <height>17</height>
      </rect>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>ASD PEOPLE CONTROL</string>
+=======
+     <string>ASD Music Store</string>
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
     </property>
    </widget>
    <widget class="QLineEdit" name="line_user">

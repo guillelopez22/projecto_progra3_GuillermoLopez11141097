@@ -20,7 +20,11 @@ double Gato::getSueldo()const{
 string Gato::toString() const{
     stringstream ss;
     ss << Empleado::toString() << "Horas trabajadas: " << horas_trabajadas << endl
+<<<<<<< HEAD
           << "Sueldo: " << Gato::getSueldo() << endl;
+=======
+          << "Sueldo: " << Gato::getSueldo();
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
     return ss.str();
 }
 void Gato::setHoras(double horas_trabajadas){

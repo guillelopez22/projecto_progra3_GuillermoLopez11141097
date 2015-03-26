@@ -5,12 +5,18 @@
 #include "miestado.h"
 #include "ui_miestado.h"
 #include "gatocontrol.h"
+<<<<<<< HEAD
 #include "add_instrumento.h"
 #include "adding_admin.h"
 #include "list_gatos.h"
 using std::vector;
 
 loggedadmin::loggedadmin(QWidget *parent, Empleado* empleadoo, vector<Empleado*>* emps, vector<Instrumento*>* inst) :
+=======
+using std::vector;
+
+loggedadmin::loggedadmin(QWidget *parent, Empleado* empleadoo, vector<Empleado*>* emps) :
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
     QDialog(parent),
     ui(new Ui::loggedadmin)
 {
@@ -18,7 +24,10 @@ loggedadmin::loggedadmin(QWidget *parent, Empleado* empleadoo, vector<Empleado*>
     ee=empleadoo;
     todos=emps;
     ui->admin->setText(QString::fromStdString(ee->getNombre()));
+<<<<<<< HEAD
     instss=inst;
+=======
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
 }
 
 loggedadmin::~loggedadmin()
@@ -39,6 +48,7 @@ void loggedadmin::on_pushButton_clicked()
     diag.setModal(true);
     diag.exec();
 }
+<<<<<<< HEAD
 
 void loggedadmin::on_pushButton_2_clicked()
 {
@@ -53,3 +63,5 @@ void loggedadmin::on_pushButton_3_clicked()
     diag.setModal(true);
     diag.exec();
 }
+=======
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c

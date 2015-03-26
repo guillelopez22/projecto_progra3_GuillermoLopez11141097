@@ -21,13 +21,20 @@ using std::cout;
 using std::vector;
 using std::string;
 
+<<<<<<< HEAD
 MainWindow::MainWindow(QWidget *parent, vector<Empleado*>* empleados, vector<Instrumento*>* instrumentos) :
+=======
+MainWindow::MainWindow(QWidget *parent, vector<Empleado*>* empleados) :
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     employee = empleados;
+<<<<<<< HEAD
     instruments = instrumentos;
+=======
+>>>>>>> b293d21c0dd70170a0f36cc02a3823017a8a924c
 
 }
 
