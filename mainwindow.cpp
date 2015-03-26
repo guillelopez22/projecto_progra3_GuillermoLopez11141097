@@ -11,6 +11,7 @@
 #include "percusion.h"
 #include "add_gato.h"
 #include "loggedadmin.h"
+#include "successlogin.h"
 #include "loggedgato.h"
 #include <vector>
 #include <string>
@@ -66,29 +67,35 @@ void MainWindow::on_pushButton_clicked()
     r=ui->line_pass->text();
     int identi;
     pass=r.toStdString();
-    bool logged, notlogged;
+    int eval;
+    eval=0;
     for(int i=0; i < employee->size(); i++){
         if(employee->at(i)->getUser()==user && employee->at(i)->getPass()==pass && employee->at(i)->getIdenti()==1){
-
+            asd=employee->at(i);
+            successlogin asda(this, asd);
+            asda.setModal(true);
+            asda.exec();
             loggedadmin diag(this, employee);
             diag.setModal(true);
             diag.exec();
-            logged=true;
+            eval=1;
+
         }else if(employee->at(i)->getUser()==user && employee->at(i)->getPass()==pass && employee->at(i)->getIdenti()==2){
             asd=employee->at(i);
+            successlogin asda(this, asd);
+            asda.setModal(true);
+            asda.exec();
             loggedgato diag(this, employee, asd);
             diag.setModal(true);
             diag.exec();
-            logged=true;
-        }else{
-            notlogged=true;
-        }
-        if(notlogged){
-            errorlogin diag(this);
-            diag.setModal(true);
-            diag.exec();
-        }
 
+            eval=1;
+        }
+    }
+    if(eval==0){
+        errorlogin diag(this);
+        diag.setModal(true);
+        diag.exec();
     }
     ui->line_pass->setText(QString(""));
     ui->line_user->setText(QString(""));
